@@ -9,7 +9,7 @@ import closeIcon from "../../images/closeIcon.png"
 
 let socket
 
-const ENDPOINT = "https://ec2-16-171-199-189.eu-north-1.compute.amazonaws.com:4000";
+const ENDPOINT = "http://ec2-16-171-199-189.eu-north-1.compute.amazonaws.com:4000";
 
 const Chat = () =>{
     const [id, setId] = useState("");
