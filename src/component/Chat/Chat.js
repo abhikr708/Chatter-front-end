@@ -9,9 +9,7 @@ import closeIcon from "../../images/closeIcon.png"
 
 let socket
 
-const ENDPOINT = "http://ec2-16-171-199-189.eu-north-1.compute.amazonaws.com:4000";
-//const ENDPOINT = "wss://ec2-16-171-199-189.eu-north-1.compute.amazonaws.com:4000/socket.io/?EIO=4&transport=websocket
-";
+const ENDPOINT = "https://chatter-backend-qfcx.onrender.com/";
 
 const Chat = () =>{
     const [id, setId] = useState("");
@@ -55,7 +53,6 @@ const Chat = () =>{
         }
     }, [])
 
-    // _____________something is wrong here, user name is undefined___________
     useEffect(()=>{
         socket.on('sendMessage', (data)=>{
             // console.log(`user: ${data.user}, message: ${data.message}`);
